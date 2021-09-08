@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> task 1 </title>
+</head>
+<body>
+<h1> Login Form </h1>
+<div>
+    <label for="Email">E-mail</label>
+    <input type="text" id="Email" n
+           ame="user_name">
+</div>
+<div>
+    <label for="password">Password</label>
+    <input type="password" id="Password" name="password">
+</div>
+<tr>
+    <td>
+        <input type="button" value="Login" onclick="submitform()">
+    </td>
+    <td>
+        <input type="reset" value="Reset">
+    </td>
+</tr>
+
+<script type="text/javascript">
+    function submitform(){
+        var Email=document.getElementById("Email").value;
+        var Password=document.getElementById("Password").value;
+        console.log(Email+'----'+Password);
+        alert(Email+'----'+Password);
+    }
+</script>
+</body>
+</html>
